@@ -11,9 +11,9 @@ Domain (Entidades e interfaces do núcleo do negócio)
 
 Application (Casos de uso e regras de negócio)
 
-WebAPP (Camada de apresentação - MVC)
+WebAPP
 
-Tests (Testes unitários e de integração)
+Tests (Testes unitários)
 
 ✨ Funcionalidades
 Cadastro de clientes com dados essenciais
