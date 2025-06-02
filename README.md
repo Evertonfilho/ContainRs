@@ -1,6 +1,6 @@
-# 🚀 Sistema de Gestão de Clientes v1.0
+# Sistema de Gestão de Clientes
 
-## 🌟 Sobre Este Projeto
+## Sobre Este Projeto
 
 Bem-vindo ao **Sistema de Gestão de Clientes**! Esta é uma aplicação web desenvolvida com **.NET MVC**, cuidadosamente arquitetada seguindo os princípios da **Clean Architecture**. O foco é fornecer uma solução robusta e organizada para as operações essenciais de gerenciamento de clientes (CRUD), garantindo uma clara separação de responsabilidades e um código mais manutenível.
 
