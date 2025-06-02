@@ -45,23 +45,26 @@ Siga os passos abaixo para executar o projeto em seu ambiente local:
 
 1.  **Clone o Repositório:**
     ```bash
-    # Comando para clonar o repositório (substitua pela URL correta)
-    git clone [https://github.com/seu-usuario/seu-repositorio.git](https://github.com/seu-usuario/seu-repositorio.git)
-    cd seu-repositorio
+    git clone [https://github.com/Evertonfilho/ContainRs.git](https://github.com/Evertonfilho/ContainRs.git)
+    cd ContainRs
     ```
 2.  **Configuração do Banco de Dados:**
-    * Ajuste a string de conexão no arquivo `appsettings.json` (ou similar) no projeto `WebAPP` para apontar para sua instância de banco de dados.
+    * Ajuste a string de conexão no arquivo `appsettings.json` (ou similar) no projeto `WebAPP` (ou no projeto principal que contém as configurações de inicialização) para apontar para sua instância de banco de dados.
 3.  **Aplique as Migrations:**
-    * Abra o terminal na pasta do projeto `WebAPP` (ou onde o DbContext está configurado) e execute:
+    * Abra o terminal na pasta do projeto que contém seu `DbContext` e as configurações do Entity Framework Core (geralmente o projeto `WebAPP` ou um projeto de Infraestrutura/Dados) e execute:
     ```bash
     dotnet ef database update
     ```
 4.  **Inicie a Aplicação:**
-    * Execute o projeto `WebAPP`:
+    * Execute o projeto principal da sua aplicação (geralmente o `WebAPP` ou o projeto ASP.NET Core):
     ```bash
-    dotnet run --project ./Caminho/Para/Seu/ProjetoWebAPP.csproj
+    # Se estiver na raiz da solução e seu projeto WebAPP se chama, por exemplo, "ContainRs.WebApp":
+    dotnet run --project ./ContainRs.WebApp/ContainRs.WebApp.csproj
+    # Ou, se estiver dentro da pasta do projeto WebApp:
+    # cd ./ContainRs.WebApp (ou o nome correto da pasta)
+    # dotnet run
     ```
-    (Ou simplesmente execute pela sua IDE, como Visual Studio).
+    (Ou simplesmente execute pela sua IDE, como Visual Studio, clicando com o botão direito no projeto de inicialização e selecionando "Definir como Projeto de Inicialização" e depois rodando).
 
 ---
 
